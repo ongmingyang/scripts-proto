@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,7 +27,9 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="base.css" rel="stylesheet">
+    {{# stylesheets.load }}
+      base.css
+    {{/ stylesheets.load }}
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -199,8 +200,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    {{# javascripts.load }}
+      docs.min.js
+    {{/ javascripts.load }}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="docs.min.js"></script>
   </body>
 </html>
