@@ -1,104 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-
-    <title>MIT Scripts Service</title>
-
-    <!-- Bootstrap core CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    {{# stylesheets.load }}
-      base.css
-    {{/ stylesheets.load }}
-  </head>
-<!-- NAVBAR
-================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">MIT Scripts</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">Getting Started</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-header">Install your own:</li>
-                    <li><a href="#">Wordpress</a></li>
-                    <li><a href="#">MediaWiki</a></li>
-                    <li><a href="#">Photo Gallery</a></li>
-                    <li><a href="#">Forum</a></li>
-                    <li><a href="#">Trac</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Build an app using:</li>
-                    <li><a href="#">Turbogears</a></li>
-                    <li><a href="#">Django</a></li>
-                    <li><a href="#">Ruby on Rails</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">More Services</li>
-                    <li><a href="#">Hostname ([yourproject].mit.edu)</a></li>
-                    <li><a href="#">SQL Database Storage</a></li>
-                    <li><a href="#">Mail Processing</a></li>
-                    <li><a href="#">Task Scheduling (cron)</a></li>
-                    <li><a href="#">Version Control</a></li>
-                  </ul>
-                </li>
-                <li><a href="#contact">Support</a></li>
-                <li><a href="#contact">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#contact">Contribute</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
+---
+title: Index
+permalink: /index.html
+layout: default.html
+---
 
     <div class="jumbotron">
-      <h1>Marketing stuff!</h1>
+      <h1>Welcome To Scrips</h1>
       <p class="lead">**scripts.mit.edu** is a hosting service for the MIT community that provides several popular web packages such as **MediaWiki** and **WordPress**, as well as **CGI script**, **MySQL**, **cron**, and **procmail** hosting. The service is **free to any Athena account holder** or group locker. It has over 3000 registered user accounts, and is used by a number of student organizations and academic groups at MIT.</p>
     </div>
-
-
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
+   <!-- NAVBAR================================================== -->
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
@@ -140,12 +55,11 @@
         <div class="col-lg-4 last-item">
           <h2>And Much, Much More</h2>
           <p>Think we missed something? Well, click below for much more content.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="gettingstarted.html" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-
-      <!-- START THE FEATURETTES -->
+            <!-- START THE FEATURETTES -->
 
 <!--       <hr class="featurette-divider">
 
@@ -186,24 +100,3 @@
       <hr class="featurette-divider"> -->
 
       <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2004-2013, the SIPB scripts.mit.edu project. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    {{# javascripts.load }}
-      docs.min.js
-    {{/ javascripts.load }}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  </body>
-</html>
