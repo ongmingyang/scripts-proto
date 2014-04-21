@@ -1,0 +1,25 @@
+---
+# Usage: http://ruhoh.com
+
+# This helps parsers (and hosting platforms) determine which version is needed to compile your site.
+# If you compile your blog yourself, setting this won't matter, but it's a nice thing to keep updated.
+RuhohSpec: "2.1"
+
+# Used for things like RSS that need the full URL to a given resource.
+# This DOES NOT affect any of your paths or links in any way.
+# This DOES NOT configure domain mapping. See post2.ruhoh.com for hosting options.
+production_url: "http://scripts.mit.edu/"
+
+# Intelligently prepends all urls in the system with the given base_path.
+# This allows you to host your blog in a subdirectory of a given website.
+# Example:
+#  To host at the path: http://myuniversity.edu/staff/me/~/blog.
+#  set base_path: "/staff/me/~/blog"
+# NOTE: base_path is never added in development mode (for convenience).
+base_path: "/"
+
+# Tell ruhoh which folder will model the "theme"
+twitter :
+  # Tells ruhoh which collection class to use for this folder.
+  # Here we use "theme" which makes this folder the theme.
+  use : "theme"
